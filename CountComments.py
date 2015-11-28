@@ -5,7 +5,7 @@ import os
 import json
 import matplotlib.pyplot as plt
 
-def CountRepost(rootDir,word,topnum):
+def CountComments(rootDir,word,topnum):
 
     timeDict = {}
     allTime = set()
@@ -39,7 +39,7 @@ def CountRepost(rootDir,word,topnum):
             timeDict[ t ] = 0
 
     sortTime = get_top(timeDict)
-    print("The number of reposts per day for brand " + word + " are listed as follows : ")
+    print("The number of comments per day for brand " + word + " are listed as follows : ")
 
     i = 0
     X_axis = []
@@ -72,8 +72,10 @@ if __name__ == '__main__':
     topnum = 1
     path = '/Users/edisonzhao1/Downloads/weibo/'
     brand = 'michaelkors'
-    CountRepost(path, brand, topnum)
+    print('Now processing Michael Kors')
+    CountComments(path, brand, topnum)
     print('\n')
     brand = 'katespade'
-    CountRepost(path, brand, topnum)
+    print('Now processing Kate Spade')
+    CountComments(path, brand, topnum)
     

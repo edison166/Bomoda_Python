@@ -50,6 +50,9 @@ def WordCount1_a(rootDir,word):
 
 if __name__ == '__main__':
     path = '/Users/edisonzhao1/Downloads/weibo/'
-#    brand = 'michaelkors'
+    brand = 'michaelkors'
+    print('Now processing Michael Kors')
+    WordCount1_a(path, brand)
     brand = 'katespade'
+    print('Now processing Kate Spade')
     WordCount1_a(path, brand)

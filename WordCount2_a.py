@@ -52,7 +52,9 @@ if __name__ == '__main__':
     topnum = 1
     path = '/Users/edisonzhao1/Downloads/weibo/'
     brand = 'michaelkors'
+    print('Now processing Michael Kors')
     WordCount2_a(path, brand, topnum)
     brand = 'katespade'
+    print('Now processing Kate Spade')
     WordCount2_a(path, brand, topnum)
     
