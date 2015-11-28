@@ -49,6 +49,8 @@ def CountComments(rootDir,word,topnum):
          Y_axis.append(v)
          print(str(k) + "     " + str(v) + ' times')
          i = i + 1
+    plt.xlabel('days after 08-29')
+    plt.ylabel('Comments Number')
     plt.plot(X_axis, Y_axis)
     plt.show()
 
